@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.naive_bayes import GaussianNB
 
 # load data from CSV
-data = pd.read_csv('tennisdata.csv')
+data = pd.read_csv('trainingdata.csv')
 print("THe first 5 values of data is :\n",data.head())
 
 # obtain Train data and Train output
