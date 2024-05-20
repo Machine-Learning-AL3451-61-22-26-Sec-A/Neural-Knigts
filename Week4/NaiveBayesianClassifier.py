@@ -1,29 +1,8 @@
-import os
-import subprocess
-import sys
-
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-try:
-    import pandas as pd
-except ModuleNotFoundError:
-    install('pandas')
-    import pandas as pd
-
-try:
-    from sklearn import tree
-    from sklearn.preprocessing import LabelEncoder
-    from sklearn.naive_bayes import GaussianNB
-    from sklearn.model_selection import train_test_split
-    from sklearn.metrics import accuracy_score
-except ModuleNotFoundError:
-    install('scikit-learn')
-    from sklearn import tree
-    from sklearn.preprocessing import LabelEncoder
-    from sklearn.naive_bayes import GaussianNB
-    from sklearn.model_selection import train_test_split
-    from sklearn.metrics import accuracy_score
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder
+from sklearn.naive_bayes import GaussianNB
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 
 # Load data from CSV
 try:
