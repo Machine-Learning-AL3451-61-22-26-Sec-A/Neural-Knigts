@@ -102,6 +102,7 @@ def buildTree(data, rows, columns):
     return root
 
 def main():
+    st.write("22AIA-NEURAL KNIGHTS")
     st.title("Decision Tree Classifier")
 
     # Upload CSV file
