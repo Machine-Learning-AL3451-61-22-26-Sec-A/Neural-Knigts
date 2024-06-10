@@ -53,6 +53,7 @@ class NeuralNetwork:
         return self.predicted_output
 
 def main():
+    st.write("22AIA-NEURAL KNIGHTS")
     st.title('Backpropagation Neural Network with Streamlit')
     
     # Sample dataset
