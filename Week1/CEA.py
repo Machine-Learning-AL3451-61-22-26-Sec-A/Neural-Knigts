@@ -29,6 +29,7 @@ def learn(concepts, target):
 
 # Main function to run the Streamlit app
 def main():
+    st.write("22AIA-NEURAL KNIGHTS")
     st.title("""Candidate Elimination Algorithm 
     Team - NEURAL_KNIGHTS
     Contributors - Jeeva v,Dharaneesh,Jemson """)
